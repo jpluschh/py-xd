@@ -4,7 +4,7 @@ import pandas as pd
 #import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('./raw-20201206/owid-covid-data.csv')
+df = pd.read_csv('./raw-data/20201206/owid-covid-data.csv')
 
 #viz - icu patients per million
 icu_ppm_filtered = df[df['icu_patients_per_million'] > 0]
