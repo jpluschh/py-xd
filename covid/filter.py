@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-df = pd.read_csv('./raw-data/20201206/owid-covid-data.csv')
+df = pd.read_csv('./raw-data/20201213/owid-covid-data.csv')
 
 print(df.info())
 print(df['continent'].unique())
@@ -66,7 +66,7 @@ ax1.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig1.suptitle('New Cases', fontsize=16)
 fig1.tight_layout()
 fig1.autofmt_xdate()
-plt.savefig('cont-asia-v1.png', dpi=2000)
+plt.savefig('cont-asia.png', dpi=1000)
 
 fig2, ax2 = plt.subplots(1)
 ax2.scatter(europe['date'].sort_values(), europe['new_cases'], marker='.')
@@ -76,7 +76,7 @@ ax2.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig2.suptitle('New Cases', fontsize=16)
 fig2.tight_layout()
 fig2.autofmt_xdate()
-plt.savefig('europe-test.png', dpi=2000)
+plt.savefig('cont-europe.png', dpi=1000)
 
 fig3, ax3 = plt.subplots(1)
 ax3.scatter(africa['date'].sort_values(), africa['new_cases'], marker='.')
@@ -86,7 +86,7 @@ ax3.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig3.suptitle('New Cases', fontsize=16)
 fig3.tight_layout()
 fig3.autofmt_xdate()
-plt.savefig('africa-test.png', dpi=2000)
+plt.savefig('cont-africa.png', dpi=1000)
 
 fig4, ax4 = plt.subplots(1)
 ax4.scatter(na['date'].sort_values(), na['new_cases'], marker='.')
@@ -96,7 +96,7 @@ ax4.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig4.suptitle('New Cases', fontsize=16)
 fig4.tight_layout()
 fig4.autofmt_xdate()
-plt.savefig('na-test.png', dpi=2000)
+plt.savefig('cont-na.png', dpi=1000)
 
 fig5, ax5 = plt.subplots(1)
 ax5.scatter(sa['date'].sort_values(), sa['new_cases'], marker='.')
@@ -106,7 +106,7 @@ ax5.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig5.suptitle('New Cases', fontsize=16)
 fig5.tight_layout()
 fig5.autofmt_xdate()
-plt.savefig('sa-test.png', dpi=2000)
+plt.savefig('cont-sa.png', dpi=1000)
 
 fig6, ax6 = plt.subplots(1)
 ax6.scatter(oceania['date'].sort_values(), oceania['new_cases'], marker='.')
@@ -116,6 +116,5 @@ ax6.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 fig6.suptitle('New Cases', fontsize=16)
 fig6.tight_layout()
 fig6.autofmt_xdate()
-plt.savefig('oceania-test.png', dpi=2000)
+plt.savefig('cont-oceania.png', dpi=1000)
 # =======================================================================
-
