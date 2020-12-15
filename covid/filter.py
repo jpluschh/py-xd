@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-df = pd.read_csv('./raw-data/20201214/owid-covid-data.csv')
+df = pd.read_csv('./raw-data/20201216/owid-covid-data.csv')
 
 print(df.info())
 print(df['continent'].unique())
