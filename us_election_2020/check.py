@@ -1,0 +1,40 @@
+#! /usr/bin/python3
+
+import pandas as pd
+
+
+gov_cnty       = pd.read_csv('./raw/governors_county.csv')
+gov_cnty_cand  = pd.read_csv('./raw/governors_county_candidate.csv')
+gov_state      = pd.read_csv('./raw/governors_state.csv')
+hr_cand        = pd.read_csv('./raw/house_candidate.csv')
+hr_state       = pd.read_csv('./raw/house_state.csv')
+pres_cnty      = pd.read_csv('./raw/president_county.csv')
+pres_cnty_cand = pd.read_csv('./raw/president_county_candidate.csv')
+pres_state     = pd.read_csv('./raw/president_state.csv')
+sen_cnty       = pd.read_csv('./raw/senate_county.csv')
+sen_cnty_cand  = pd.read_csv('./raw/senate_county_candidate.csv')
+sen_state      = pd.read_csv('./raw/senate_state.csv')
+
+print(gov_cnty.info())
+print(gov_cnty.describe())
+print(gov_cnty_cand.info())
+print(gov_cnty_cand.describe())
+print(gov_state.info())
+print(gov_state.describe())
+print(hr_cand.info())
+print(hr_cand.describe())
+print(hr_state.info())
+print(hr_state.describe())
+print(pres_cnty.info())
+print(pres_cnty.describe())
+print(pres_cnty_cand.info())
+print(pres_cnty_cand.describe())
+print(pres_state.info())
+print(pres_state.describe())
+print(sen_cnty.info())
+print(sen_cnty.describe())
+print(sen_cnty_cand.info())
+print(sen_cnty_cand.describe())
+print(sen_state.info())
+print(sen_state.describe())
+
